@@ -5,6 +5,7 @@ Script to parse README.md and generate a JSON index of all Claude skills.
 
 import json
 import re
+from datetime import datetime, timezone
 from typing import Dict, List
 
 
@@ -60,7 +61,7 @@ def parse_readme(readme_path: str) -> Dict:
         "total_skills": sum(cat["count"] for cat in categories.values()),
         "total_categories": len(categories),
         "categories": categories,
-        "generated_at": "2025-10-22T00:57:59.893Z"
+        "generated_at": datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
     }
     
     return index
