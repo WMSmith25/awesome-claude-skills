@@ -78,6 +78,18 @@
 - [skill-creator](https://github.com/anthropics/skills/tree/main/skill-creator) - Template / helper to build new Claude skills.  
 - [template-skill](https://github.com/anthropics/skills/tree/main/template-skill) - Minimal skeleton for a new skill project structure.  
 
+## 📋 Index & Summary
+
+This repository includes automatically generated index files for easier navigation and programmatic access:
+
+- **[index.json](index.json)** - Machine-readable JSON index of all skills organized by category
+- **[INDEX_SUMMARY.md](INDEX_SUMMARY.md)** - Human-readable markdown summary of all skills
+
+To regenerate these files after updating the README:
+```bash
+python3 generate_index.py
+```
+
 ## 🤝 Contribution
 
 If you have suggestions, improvements, or new resources to add:
